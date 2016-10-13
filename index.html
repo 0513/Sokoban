@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>push box</title>
+	<script src="lib/easeljs-NEXT.min.js"></script>
+    <script src='lib/tweenjs-NEXT.min.js'></script>
+    <script src='lib/soundjs-0.5.2.min.js'></script>
+    <script src='lib/preloadjs-NEXT.min.js'></script>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			font-family: Microsoft Yahei;
+		}
+		#stage{
+			width:400px;
+			height:400px;
+		}
+		div{
+			padding:10px 5px;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="stage" width="400" height="400"></canvas>
+	<div>
+		<input type="button" value="上一关(P)" onclick="preLevel()">
+		<input type="button" value="重新开始(R)" onclick="newGame()">
+		<input type="button" value="下一关(N)" onclick="nextLevel()">
+		&nbsp;&nbsp;
+		请用上下左右键控制移动
+	</div>
+	<script src="js/constant.js"></script>
+	<script src="js/preload.js"></script>
+	<script src="js/person.js"></script>
+	<script src="js/pack.js"></script>
+	<script src="js/level.js"></script>
+	<script src="js/pushbox.js"></script>
+</body>
+</html>
